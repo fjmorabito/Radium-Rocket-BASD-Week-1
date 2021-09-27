@@ -1,0 +1,347 @@
+@font-face {
+  font-family: "Guardian Text Egyptian Web";
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+
+  src: url("../assets/fonts/Guardian-Text-Egyp-Web-Med.eot");
+  src: url("../assets/fonts/Guardian-Text-Egyp-Web-Med.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/Guardian-Text-Egyp-Web-Med.woff") format("woff"),
+    url("../assets/fonts/Guardian-Text-Egyp-Web-Med.ttf") format("truetype"),
+    url("../assets/fonts/Guardian-Text-Egyp-Web-Med.svg#Guardian-Text-Egyp-Web-Medium")
+      format("svg");
+}
+
+@font-face {
+  font-family: "Guardian Text Sans Web";
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+
+  src: url("../assets/fonts/TextSans-Regular.eot");
+  src: url("../assets/fonts/TextSans-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/TextSans-Regular.woff") format("woff"),
+    url("../assets/fonts/TextSans-Regular.ttf") format("truetype"),
+    url("../assets/fonts/TextSans-Regular.svg#TextSans-Regular") format("svg");
+}
+
+@font-face {
+  font-family: "Guardian Egyptian Web";
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+
+  src: url("../assets/fonts/Guardian-Egyp-Web-Semibold.eot");
+  src: url("../assets/fonts/Guardian-Egyp-Web-Semibold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/Guardian-Egyp-Web-Semibold.woff") format("woff"),
+    url("../assets/fonts/Guardian-Egyp-Web-Semibold.ttf") format("truetype"),
+    url("../assets/fonts/Guardian-Egyp-Web-Semibold.svg#Guardian-Egyp-Web-Semibold")
+      format("svg");
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.navbar {
+  width: 100%;
+  height: 15%;
+  background-color: blue;
+}
+
+.category-navbar {
+  height: 20px;
+}
+
+.main-container {
+  width: 1258px;
+  padding: 0 20px;
+  margin: auto;
+  border-left: 1px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+}
+
+.lines {
+  height: 13px;
+  width: 1300px;
+  margin-left: -20px;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #dcdcdc,
+    #dcdcdc 1px,
+    transparent 1px,
+    transparent 4px
+  );
+}
+
+.grid-section {
+  display: grid;
+  width: 100%;
+  margin-left: 0;
+  grid-template-columns: 229px 1fr;
+  grid-column-gap: 10px;
+}
+
+.first-grid-element {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8px;
+  border-right: 1px solid #dcdcdc;
+}
+
+.author-section {
+  display: flex;
+  flex-direction: column;
+  width: 219px;
+  margin-top: 203px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.author-section .lines {
+  width: 219px;
+  margin-left: 0px;
+}
+.author {
+  font-family: "Guardian Egyptian Web", Georgia, serif;
+  font-size: 17px;
+  line-height: 1.15;
+  font-weight: 500;
+  color: #a1845c;
+  padding-bottom: 8px;
+}
+
+.author-label {
+  width: max-content;
+  font-family: "Guardian Text Sans Web", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #707070;
+  padding-top: 2px;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.author-label:hover {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.category-link {
+  width: max-content;
+  text-decoration: none;
+  color: #a1845c;
+  font-family: "Guardian Egyptian Web", Georgia, serif;
+  font-size: 19px;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.category-link:hover {
+  border-bottom: 1px solid #a1845c;
+}
+
+.second-grid-element {
+  width: 688px;
+}
+
+.second-grid-element p {
+  width: 620px;
+  margin-bottom: 16px;
+  font-family: "Guardian Text Egyptian Web", Georgia, serif;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #505050;
+}
+
+.second-grid-element a {
+  font-size: 17px;
+  text-decoration: none;
+  border-bottom: 1px solid #dcdcdc;
+  color: #6b5840;
+}
+
+.second-grid-element a:hover {
+  border-bottom: 1px solid #6b5840;
+}
+
+.upper-note {
+  margin-left: -10px;
+  margin-bottom: 6px;
+  font-family: "Guardian Text Sans Web", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #121212;
+  background-color: #ffe500;
+  display: inline-block;
+  padding: 6px 10px;
+}
+
+.title {
+  width: 620px;
+  padding-top: 4px;
+  padding-bottom: 36px;
+  font-family: Georgia, serif;
+  font-size: 34px;
+  line-height: 1.15;
+  font-weight: 500;
+  color: #121212;
+}
+
+.note-article {
+  margin-bottom: 12px;
+  max-width: 540px;
+  font-family: "Guardian Egyptian Web", Georgia, serif;
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 20px;
+  color: #121212;
+}
+
+.picture {
+  width: 620px;
+}
+
+.article-img {
+  width: 620px;
+  height: 372px;
+}
+
+.figcaption-picture {
+  padding-top: 6px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #707070;
+  margin-bottom: 6px;
+}
+
+.alt-section {
+  width: 620px;
+  margin: 18px 0px;
+  padding: 4px 8px 12px;
+  border-top: 1px solid #ffe500;
+  background-color: #f6f6f6;
+}
+
+.final-words {
+  padding: 2px;
+  color: #121212;
+  background-color: #ffe500;
+}
+
+.btn-container {
+  margin: 24px 8px 4px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button {
+  margin: 4px 8px 4px 0px;
+}
+
+.first-btn {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background-color: #ffe500;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: "Guardian Text Sans Web", Arial, "Lucida Grande", sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 900;
+  height: 44px;
+  padding: 0px 20px 2px;
+  border-radius: 44px;
+}
+
+.first-btn:hover {
+  background-color: #ffce00;
+}
+
+.support-link {
+  color: #121212 !important;
+  border: none !important;
+}
+
+.second-btn {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #121212;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: "Guardian Text Sans Web", Arial, "Lucida Grande", sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 900;
+  height: 44px;
+  padding: 0px 20px 2px;
+  border-radius: 44px;
+}
+
+.second-btn:hover {
+  background-color: #efefef;
+}
+
+.payment-methods {
+  width: 176px;
+  height: 25px;
+  margin: 4px 0;
+}
+
+/*Classes used exclusively on the first week news*/
+
+.category-info {
+  font-size: 15px !important;
+
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icons-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.read-sections {
+  margin-bottom: 16px;
+  width: 620px;
+  background-color: #f6f6f6;
+  font-weight: 800;
+}
+
+.author1 {
+  margin-top: 201px;
+}
+
+.none-border-link {
+  border: none !important;
+}
+.none-border-link:hover {
+  border: none !important;
+}
+
+.category-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 6px;
+  font-family: "Guardian Text Sans Web", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #121212;
+  padding: 6px 10px;
+}
